@@ -1,0 +1,7 @@
+-name mac@127.0.0.1
++pc unicode
+-setcookie node_devrunner
++K true
++A 5
+-env ERL_MAX_PORTS 4096
+-env ERL_FULLSWEEP_AFTER 10

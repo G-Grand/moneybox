@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Копилка</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Maxim Sokhatsky">
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/app/css/forms.css?v=2" type="text/css">
+    <link href="/static/app/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body class="gray" id="body">
+<div class="app">
+    <div id="logo">
+        <!--img width="200px" src="/static/app/img/Privat48.svg"-->
+    </div>
+    <!-- MENU -->
+    <div id=menuBox style="display:none;" class="box">
+        <div id=deposits class="item"><a id=depositsLink href="open.htm">Порівняння депозитів</a></div>
+        <div id=calc class="item"><a id=calcLink href="calc.htm">Депозитный калькулятор</a></div>
+        <div id="myDeps" class="item"><a id=lobbyLink href="lobby.htm">Мої депозити</a></div>
+        <div id="myPaym" class="item"><a id=paymentsLink href="/static/app/payments.htm">Мої платежі</a></div>
+    </div>
+
+    <div class="box">
+        <div class="pad10"><a id="backtodeplist" href="lobby.htm">&larr; Вернуться к списку депозитов</a></div>
+        <h1 id="depositCaption" class="center">
+            <!-- Here is a place for Deposit name from deposit_details.erl -->
+            &nbsp;
+        </h1>
+        <div class="column2">
+            <div id="depositDetails" class="detailsTable box">
+                <!-- Here is a place for table from deposit_details.erl -->
+                &nbsp;
+            </div>
+        </div>
+        <div id="depositOptions" class="column2">
+            <!-- Place for Deposit options -->
+            <div class="center" style='margin:20%'><img src="/static/app/img/preloader.gif"></div>
+        </div>
+        <div>
+            <div id="divForCheck">
+                <!-- Place for check -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal window -->
+<div id="modal_form">
+    <div id="modalText">
+
+    </div>
+    <div id="modalSectionBtns" class="buttons">
+        <a id="modalButton" href="#" class="button sgreen" style="padding: 8px 20px;cursor: pointer;" onclick="closeModalWindow();">Ok</a>
+    </div>
+</div>
+<div id="overlay"  class="overlay" onclick="closeModalWindow()"></div>
+<!-- end of Modal window -->
+
+<script>var transition = {pid: '', port: window.location.port}</script>
+
+<script src='/n2o/protocols/bert.js'></script>
+<script src='/n2o/protocols/binary.js'></script>
+<script src='/n2o/protocols/client.js'></script>
+<script src='/n2o/protocols/nitrogen.js'></script>
+<script src='/static/app/js/bullet.js'></script>
+<script src='/n2o/utf8.js'></script>
+<script src='/n2o/template.js'></script>
+<script src='/n2o/n2o.js'></script>
+
+<script src="/static/app/js/postmessage.js"></script>
+<script src="/static/app/js/Frame.js"></script>
+<script src="/static/app/js/translation.js?v=1"></script>
+<script src="/static/app/js/app.js?v=2"></script>
+</body>
+
+</html>

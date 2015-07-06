@@ -1,0 +1,9 @@
+{application, moneybox,
+ [
+  {description, "P48 Moneybox Application"},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [kernel, stdlib, n2o, active]},
+  {mod, { moneybox_app, []}},
+  {env, []}
+ ]}.

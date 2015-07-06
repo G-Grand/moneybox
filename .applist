@@ -1,0 +1,1 @@
+[kernel,stdlib,fs,crypto,compiler,syntax_tools,mnesia,ranch,gproc,xmerl,active,services,cowlib,kvs,erlydtl,cowboy,n2o,bpe,moneybox,act,dbs,forms,jsone,mad,rest,sh,shen]
